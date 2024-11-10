@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Navbar Styling */
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Increased gap */
+    padding: 15px 0; /* More padding */
+    z-index: 1000;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 20px; /* Increased padding for better button-like appearance */
+    font-size: 1.1rem; /* Increased font size */
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    color: #4CAF50;
+    transform: scale(1.1); /* Slightly enlarges on hover */
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(120deg, #4CAF50, #2E8B57);
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.typed-text {
+    color: #fff;
+    font-weight: bold;
+    font-size: 2rem; 
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.subtitle {
+    font-size: 1.3rem; 
+    color: #f6f7dd;
+    margin-bottom: 30px; 
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 15px 30px; 
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 1.1rem; 
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.btn:focus {
+    outline: 2px solid #4CAF50;
+    outline-offset: 2px;
+}
+
+/* General Styling for About Section */
+
+.about {
+    padding: 60px;
+    text-align: center;
+    background: linear-gradient(120deg, #2E8B57, #3CB371);
+    color: #fff;
+}
+
+#about p {
+    font-size: 1.1rem; 
+    text-align: justify; 
+    margin-bottom: 20px;
+}
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; 
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+.profile-image-container {
+    flex: 0 0 180px; 
+}
+
+.profile-image {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff; 
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 2.5rem; 
+    margin-bottom: 20px;
+}
+
+.about-text .highlight {
+    color: #fcf811;
+}
+
+.about-text .emoji {
+    font-size: 2rem; 
+}
+
+
+/* General Styling for Projects Section */
+#projects {
+    padding: 60px;
+    text-align: center;
+    background: #e8f9e8;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#projects h2 {color: #3CB371;}
+#projects p {
+    font-size: 1.1rem;
+    line-height: 1.8; 
+    color: #555; 
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+#projects ul {
+    list-style-type: disc;
+    margin-left: 30px;
+}
+
+#projects li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+/* Project Card Styling */
+.project-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 30px; 
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); 
+}
+
+.project-image {
+    flex: 0 0 250px; 
+    margin-right: 25px;
+}
+
+.project-image img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.project-description {
+    flex: 1;
+}
+
+.project-description h3 {
+    font-size: 2rem; 
+    margin-bottom: 15px; 
+}
+
+.project-description p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6; 
+}
+
+/* Contact Section */
+#contact {
+    padding: 60px;
+    text-align: center;
+    background: linear-gradient(120deg, rgba(60, 179, 113, 0.8), rgba(46, 139, 87, 0.8)), url('background-image.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+}
+
+/* Section Header */
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Container */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    animation: fadeIn 2s ease-in;
+}
+
+/* Form Group */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin: 8px 0;
+}
+
+/* Labels */
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Input Fields and Textarea */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 10px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Input Fields and Textarea Hover Effect */
+.contact-form input:hover,
+.contact-form textarea:hover {
+    border-color: #3CB371;
+    box-shadow: 0 0 5px rgba(60, 179, 113, 0.5);
+}
+
+/* Submit Button */
+.contact-form button {
+    padding: 12px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 1.1rem;
+}
+
+.contact-form button:hover {
+    background-color: #45a049;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Footer Section */
+footer {
+    padding: 20px;
+    background: linear-gradient(120deg, #333, #555);
+    color: white;
+    text-align: center;
+    border-top: 5px solid #3CB371;
+}
+
+/* Footer Content */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    animation: fadeIn 2s ease-in;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.social-links i {
+    font-size: 1.5rem;
+}
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+/* Footer Fade-In Animation */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.social-links a:hover {
+    color: #4CAF50;
+    transform: scale(1.2); 
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+    .project-card {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 768px) {
+    .btn {
+        bottom: 20px; 
+    }
+}
+
