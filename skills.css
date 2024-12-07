@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: white;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar h1 {
+    color: red;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    transition: color 0.3s;
+  }
+  
+  .navbar-links a:hover,
+  .navbar-links a.active {
+    color: red;
+  }
+  
+  .navbar-profile i {
+    color: white;
+    font-size: 1.5rem;
+  }
+  
+  .skills-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #121212;
+  }
+  .skills-category {
+    margin-bottom: 30px;
+  }
+  
+  .skills-category h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .skills-category h2::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #f00;
+    margin: 10px auto 0;
+    border-radius: 5px;
+  }
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    margin: 0 auto;
+    padding: 40px;
+    max-width: 1200px; 
+  }
+  
+  .skill-card {
+    background-color: #1c1c1c;
+    color: #fff;
+    height: 150px;
+    border-radius: 10px;
+    text-align: center; 
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s ease;
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(255, 0, 0, 0.786),0 0 20px rgba(255, 0, 0, 0.5);
+  }
+  
+  .skill-card i {
+    font-size: 2.5rem;
+    color: red;
+    margin-bottom: 10px;
+  }
+  
+  .skill-card p {
+    font-size: 0.9rem;
+    color: #bdbdbd;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .skills-container {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      padding: 20px;
+    }
+    .skill-card {
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .section-heading {
+      font-size: 2rem;
+    }
+    .section-subheading {
+      font-size: 1.5rem;
+    }
+  }
+  

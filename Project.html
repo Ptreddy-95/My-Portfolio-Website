@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        /* General Styling for Projects Section */
+#projects {
+    padding: 60px;
+    text-align: center;
+    background: #e8f9e8;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#projects h2 {color: #3CB371;}
+#projects p {
+    font-size: 1.1rem;
+    line-height: 1.8; 
+    color: #555; 
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+#projects ul {
+    list-style-type: disc;
+    margin-left: 30px;
+}
+
+#projects li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+/* Project Card Styling */
+.project-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 30px; 
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); 
+}
+
+.project-image {
+    flex: 0 0 250px; 
+    margin-right: 25px;
+}
+
+.project-image img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.project-description {
+    flex: 1;
+}
+
+.project-description h3 {
+    font-size: 2rem; 
+    margin-bottom: 15px; 
+}
+
+.project-description p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6; 
+}
+
+    </style>
+</head>
+<body>
+    <!-- Projects section -->
+    <section id="projects" data-aos="fade-up">
+        <h2>Projects</h2>
+    
+        <!-- NexaCart Project Card -->
+        
+
+        <!-- Smart Trolley Project Card -->
+        <div class="project-card" data-aos="zoom-in">
+            <div class="project-image">
+                <img src="images/Smart Trolley.png" alt="Smart Trolley">
+            </div>
+            <div class="project-details">
+                <h3>Smart Trolley</h3>
+                <p>I recently developed an embedded device prototype aimed at reducing waiting time in queue lines at shopping malls. The device enables direct billing at the trolley, eliminating the need for traditional checkout processes.</p>
+                <p>The device is mounted on the trolley, allowing customers to scan items while shopping using an interfaced barcode scanner with a Raspberry Pi, which displays real-time billing information on an LCD module.</p>
+    
+                <h4>Key Features:</h4>
+                <ul>
+                    <li><strong>Item Scanning:</strong> Implemented item scanning functionality using a barcode scanner, interfaced with a Raspberry Pi.</li>
+                    <li><strong>Real-Time Billing:</strong> Displayed real-time billing information on an I2C-connected LCD module.</li>
+                    <li><strong>User Interaction:</strong> Enhanced user interaction with push buttons and feedback mechanisms using a buzzer and LED indicators.</li>
+                    <li><strong>Improved Shopping Experience:</strong> Significantly reduced checkout time, improving the user’s overall shopping experience.</li>
+                </ul>
+    
+                <h4>Skills Used:</h4>
+                <p>User Interface Design · Debugging · Raspberry Pi · Problem Solving · Automation · Project Management · Embedded Systems · Python Programming</p>
+            </div>
+        </div>
+
+        <!-- Dual-Band Patch Antenna Project Card -->
+        <div class="project-card" data-aos="zoom-in" >
+            <div class="project-image">
+                <img src="images/Antenna Testing.jpg" alt="Dual-Band Patch Antenna">
+            </div>
+            <div class="project-details">
+                <h3>Design of Dual-Band Patch Antenna for Wideband Applications: Multiband Adaptability</h3>
+                <p>Designed and developed a dual-band patch antenna using HFSS, which involved simulation, fabrication, and performance testing using a network analyzer. The main aim of this project was to increase the gain and bandwidth of a patch antenna by adopting mechanisms such as patch geometry and substrate (dielectric) selection to improve antenna parameters.</p>
+                <p>The project achieved optimal antenna performance in terms of return loss, radiation pattern, and bandwidth for dual-band operation. It is designed to enhance communication systems by providing a cost-effective and efficient antenna design that can operate over multiple frequency bands, suitable for various wideband applications.</p>
+    
+                <h4>Key Features:</h4>
+                <ul>
+                    <li><strong>Dual-Band Operation:</strong> Designed to operate efficiently over two distinct frequency bands, providing versatility for wideband applications.</li>
+                    <li><strong>Optimized Patch Geometry:</strong> Carefully chosen geometry to enhance performance parameters like return loss and radiation pattern.</li>
+                    <li><strong>Substrate (Dielectric) Selection:</strong> Optimal choice of substrate material to improve bandwidth and antenna gain.</li>
+                    <li><strong>High Bandwidth:</strong> Achieved increased bandwidth for better frequency utilization and signal clarity.</li>
+                    <li><strong>Improved Return Loss:</strong> Enhanced return loss to ensure better signal reflection control and overall performance.</li>
+                    <li><strong>Radiation Pattern Enhancement:</strong> Optimized radiation pattern for better signal coverage and transmission.</li>
+                    <li><strong>Cost-Effective Design:</strong> Developed with an emphasis on affordability, making it suitable for various practical wideband communication systems.</li>
+                </ul>
+    
+                <h4>Skills Used:</h4>
+                <p>ANSYS HFSS · Antenna Design · Research Skills · Network Analyzer · Modeling and Simulation</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

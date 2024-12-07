@@ -1,0 +1,285 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #101010;
+  color: #fff;
+  line-height: 1.6;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #0b0c10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+.navbar h1 {
+  color: red;
+  font-size: 1.5rem;
+}
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+.navbar-links a.active {
+  color: red;
+}
+.navbar nav a:hover {
+  color: red;
+}
+.navbar-profile i {
+  color: #ff6f61;
+  font-size: 1.5rem;
+}
+
+/* Timeline */
+.timeline-section {
+  max-width: 900px;
+  margin: 50px auto;
+  text-align: center;
+}
+.timeline-title {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  max-width: 800px;
+}
+.timeline:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background: #fff;
+  border-left: 3px dotted #ddd;
+  z-index: 0;
+}
+.timeline-item {
+  position: relative;
+  margin: 2rem 0;
+  display: flex;
+  align-items: flex-start;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+.marker {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  width: 56px;
+  height: 56px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.2rem;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+/* Marker Colors */
+.marker.experience {
+  background: #207dee;
+}
+.marker.education {
+  background: rgb(32, 214, 32);
+}
+.marker.end {
+  background: rgba(255, 217, 0, 0.892);
+}
+
+.content {
+  max-width: 45%;
+  background: #222;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/* Scale-up on hover */
+.content:hover {
+  transform: translateY(-10px);
+  transform: scale(1.1);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+.content.left {
+  margin-right: auto;
+  text-align: left;
+}
+.content.right {
+  margin-left: auto;
+  text-align: left;
+}
+.content h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.content .company {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.content .date {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+.content ul {
+  list-style: none;
+}
+.content ul li {
+  margin-bottom: 0.5rem;
+}
+/* Date Styling */
+.date {
+  position: absolute;
+  top: 20px;
+  align-items: flex-start;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ddd;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+/* Date on Left Side */
+.date.left {
+  transform: translateY(-50%);
+  left: calc(50% - 205px); /* Adjust as needed */
+  text-align: right;
+}
+
+/* Date on Right Side */
+.date.right { 
+  transform: translateY(-50%);
+  right: calc(50% - 200px); /* Adjust as needed */
+  text-align: left;
+}
+
+/* Marker Adjustments */
+.marker {
+  z-index: 3;
+}
+
+/* Timeline Item Adjustments */
+.timeline-item {
+  position: relative;
+  margin: 2rem 0;
+}
+
+.timeline-item .content {
+  width: 45%;
+  background: #222;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.content.left {
+  margin-right: auto;
+  text-align: left;
+  color: #000;
+}
+.content.left.experience1 {
+  background: #72c5f1;
+}
+.content.left.experience {
+  background: white;
+}
+
+.content.right {
+  margin-left: auto;
+  text-align: left;
+  color: #000;
+}
+.content.right.experience {
+  background: white;
+}
+.content.left.education {
+  background: #6bee6d;
+}
+.content.right.education {
+  background: #6bee6d;
+}
+/* Vertical Line */
+.timeline:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background: #fff;
+  border-left: 3px dotted #ddd;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .timeline {
+    flex-direction: column;
+  }
+
+  .timeline-item {
+    flex-direction: column; /* Stack items */
+    align-items: flex-start;
+  }
+
+  .date {
+    width: auto;
+    margin: 0 0 10px 0;
+    text-align: left;
+  }
+
+  .content {
+    width: 100%; /* Full width on small screens */
+  }
+}
+
+/* Smaller screens (mobile-first adjustments) */
+@media (max-width: 480px) {
+  .content {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .marker {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .timeline-item {
+    margin: 15px 0;
+  }
+}
